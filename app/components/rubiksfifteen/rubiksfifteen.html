@@ -1,0 +1,64 @@
+<h1>Christians Rubiks Fifteen</h1>
+
+<div id="rf">
+  <div layout="row">
+    <div flex="35"></div>
+    <div flex="10" class="switch-vertical" ng-class="{'switch': rubiksfifteen.switches.a}" ng-click="rubiksfifteen.toggle('a')"></div>
+    <div flex="10" class="switch-vertical" ng-class="{'switch': rubiksfifteen.switches.b}" ng-click="rubiksfifteen.toggle('b')"></div>
+    <div flex="10" class="switch-vertical" ng-class="{'switch': rubiksfifteen.switches.c}" ng-click="rubiksfifteen.toggle('c')"></div>
+    <div flex="35"></div>
+  </div>
+
+  <div layout="row">
+    <div flex="25" ng-class="{'switch': rubiksfifteen.switches.t}" ng-click="rubiksfifteen.toggle('t')"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[0][0] > 0}" ng-bind="rubiksfifteen.field[0][0] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[0][1] > 0}" ng-bind="rubiksfifteen.field[0][1] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[0][2] > 0}" ng-bind="rubiksfifteen.field[0][2] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[0][3] > 0}" ng-bind="rubiksfifteen.field[0][3] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[0][4] > 0}" ng-bind="rubiksfifteen.field[0][4] | romannumber"></div>
+    <div flex="25" ng-class="{'switch': !rubiksfifteen.switches.t}" ng-click="rubiksfifteen.toggle('t')"></div>
+  </div>
+  <div layout="row">
+    <div flex="25" ng-class="{'switch': rubiksfifteen.switches.m}" ng-click="rubiksfifteen.toggle('m')"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[1][0] > 0}" ng-bind="rubiksfifteen.field[1][0] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[1][1] > 0}" ng-bind="rubiksfifteen.field[1][1] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[1][2] > 0}"  ng-bind="rubiksfifteen.field[1][2] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[1][3] > 0}"  ng-bind="rubiksfifteen.field[1][3] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[1][4] > 0}"  ng-bind="rubiksfifteen.field[1][4] | romannumber"></div>
+    <div flex="25" ng-class="{'switch': !rubiksfifteen.switches.m}" ng-click="rubiksfifteen.toggle('m')"></div>
+  </div>
+  <div layout="row">
+    <div flex="25" ng-class="{'switch': rubiksfifteen.switches.m}" ng-click="rubiksfifteen.toggle('m')"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[2][0] > 0}" ng-bind="rubiksfifteen.field[2][0] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[2][1] > 0}" ng-bind="rubiksfifteen.field[2][1] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[2][2] > 0}"  ng-bind="rubiksfifteen.field[2][2] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[2][3] > 0}"  ng-bind="rubiksfifteen.field[2][3] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[2][4] > 0}"  ng-bind="rubiksfifteen.field[2][4] | romannumber"></div>
+    <div flex="25" ng-class="{'switch': !rubiksfifteen.switches.m}" ng-click="rubiksfifteen.toggle('m')"></div>
+  </div>
+  <div layout="row">
+    <div flex="25" ng-class="{'switch': rubiksfifteen.switches.m}" ng-click="rubiksfifteen.toggle('m')"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[3][0] > 0}" ng-bind="rubiksfifteen.field[3][0] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[3][1] > 0}" ng-bind="rubiksfifteen.field[3][1] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[3][2] > 0}" ng-bind="rubiksfifteen.field[3][2] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[3][3] > 0}" ng-bind="rubiksfifteen.field[3][3] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[3][4] > 0}" ng-bind="rubiksfifteen.field[3][4] | romannumber"></div>
+    <div flex="25" ng-class="{'switch': !rubiksfifteen.switches.m}" ng-click="rubiksfifteen.toggle('m')"></div>
+  </div>
+  <div layout="row">
+    <div flex="25" ng-class="{'switch': rubiksfifteen.switches.d}" ng-click="rubiksfifteen.toggle('d')"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[4][0] > 0}" ng-bind="rubiksfifteen.field[4][0] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[4][1] > 0}" ng-bind="rubiksfifteen.field[4][1] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[4][2] > 0}" ng-bind="rubiksfifteen.field[4][2] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[4][3] > 0}" ng-bind="rubiksfifteen.field[4][3] | romannumber"></div>
+    <div flex="10" class="tile" ng-class="{'filledtile': rubiksfifteen.field[4][4] > 0}" ng-bind="rubiksfifteen.field[4][4] | romannumber"></div>
+    <div flex="25" ng-class="{'switch': !rubiksfifteen.switches.d}" ng-click="rubiksfifteen.toggle('d')"></div>
+  </div>
+  <div layout="row">
+    <div flex="35"></div>
+    <div flex="10" class="switch-vertical" ng-class="{'switch': !rubiksfifteen.switches.a}" ng-click="rubiksfifteen.toggle('a')"></div>
+    <div flex="10" class="switch-vertical" ng-class="{'switch': !rubiksfifteen.switches.b}" ng-click="rubiksfifteen.toggle('b')"></div>
+    <div flex="10" class="switch-vertical" ng-class="{'switch': !rubiksfifteen.switches.c}" ng-click="rubiksfifteen.toggle('c')"></div>
+    <div flex="35"></div>
+  </div>
+</div>
